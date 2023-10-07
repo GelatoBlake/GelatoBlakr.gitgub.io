@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0   ;
+    background: url(../fondos/fondo1.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f3bebe;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    
+  }
+  
+  .content {
+    flex: 1;
+    padding-right: 20px; /* Espaciado entre el contenido y la imagen a la derecha */
+  }
+  
+  .image-text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-text-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .text {
+    max-width: 400px;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .image-right img {
+    width: 350px; /* La imagen ocupa todo el ancho de su contenedor */
+    height: 500px; /* La altura se ajusta automáticamente */
+    border-radius: 10px;
+    padding-top: 65px;
+
+  }
+  .image-right2 img {
+    width: 350px; /* La imagen ocupa todo el ancho de su contenedor */
+    height: 500px; /* La altura se ajusta automáticamente */
+    border-radius: 10px;
+    padding-top: 150px;
+
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0f0f0f;
+    color: white;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: 85px; 
+  }
+  
+  nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex; /* Alinea los elementos en una línea */
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #eb94f3;
+  }
+  
+  .dropdown {
+    position: relative; /* Añade posición relativa para los elementos con desplegable */
+  }
+  
+  .dropdown-content {
+    display: none; /* Oculta el contenido del desplegable por defecto */
+    position: absolute;
+    background-color: #111111;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block; /* Muestra el contenido del desplegable cuando se hace hover en el elemento padre */
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1a5de;
+  }     
+  footer {
+    display: flex;
+    background-color: #ff8300;
+    color: rgb(10, 10, 10);
+    padding: 20px;
+  }
+  
+  .left-column, .center-column, .right-column {
+    flex: 1;
+    padding: 0 10px;
+  }
+  .center-column{
+    padding-left: 180px;
+  }
+  .right-column
+{
+    padding-right: 35px;
+}
+  .image-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-text img {
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    margin-right: 10px;
+  }
+  
+  .image-text p {
+    margin: 0;
+  }
+  
+  .social-media {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .copyright {
+    background-color: #ff8300;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+  }

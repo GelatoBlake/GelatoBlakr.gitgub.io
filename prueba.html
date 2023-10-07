@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/prueba.css">
+    
+    <title>Ejemplo de Diseño</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li class="dropdown">
+                    <a href="#">Carta</a>
+                    <ul class="dropdown-content">
+                        <li><a href="prueba.html">Comida</a></li>
+                        <li><a href="bebida.html">Bebida</a></li>
+                    </ul>
+                </li>
+                <li><a href="orden.html">Orden</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="content">
+            <div class="image-text-container">
+                <img src="productos/nigiri.jpg" alt="Imagen">
+                <div class="text">
+                    <h2>Sushi Nigiri</h2>
+                    <p> Consiste en una porción de arroz de sushi ligeramente compactado en forma de óvalo,
+                        sobre la cual se coloca una lonja de pescado crudo, mariscos, huevo o algún otro ingrediente</p>
+                    <button onclick="agregarAlCarrito('Nigiri', 15.00)">+</button>
+                </div>
+            </div>
+            <div class="image-text-container">
+                <img src="imagenes/13577-109623.jpg" alt="Otra imagen">
+                <div class="text">
+                    <h2>Sushi Maki</h2>
+                    <p>Es un rollo de alga nori relleno de arroz y distintos ingredientes 
+                        como pescado, marisco, frutas o verduras</p>
+                    <button onclick="agregarAlCarrito('Sushi Maki', 15.00)">+</button>
+                </div>
+            </div>
+            <div class="image-text-container">
+                <img src="productos/uramaki.jpg" alt="Otra imagen">
+                <div class="text">
+                    <h2>Sushi uramaki</h2>
+                    <p>
+                        Consiste en tener el arroz en el 
+                        exterior y el alga nori en el interior 
+                        se añaden los ingredientes en el centro, como pescado, mariscos, verduras o aguacate</p>
+                   
+                    <button onclick="agregarAlCarrito('Sushi uramaki', 15.00)">+</button>
+                </div>
+                
+            </div>
+            <div class="image-text-container">
+                <img src="productos/temari.jpg" alt="Otra imagen">
+                <div class="text">
+                    <h2>Sushi Temari</h2>
+                    <p>
+                        Está compuesto por pequeñas porciones de arroz de sushi que se moldean en 
+                        bolas y se cubren con diversos ingredientes, 
+                        como pescado crudo, mariscos, verduras, huevas de pescado, entre otros</p>
+                   
+                    <button onclick="agregarAlCarrito('Sushi Temari', 15.00)">+</button>
+                </div>
+                
+            </div>
+            <div class="image-text-container">
+                <img src="productos/dragon.jpg" alt="Otra imagen">
+                <div class="text">
+                    <h2>Sushi Dragon</h2>
+                    <p>
+                        Se trata de un plato grande. Incluye una base de arroz de forma cilíndrica donde se
+                        puede añadir pescado crudo, aguacate, lechuga, o cebolla crujiente entre otros
+                        posibles ingredientes.
+                    </p>
+                   
+                    <button onclick="agregarAlCarrito('Sushi Dragon', 15.00)">+</button>
+                </div>
+                
+            </div>
+            <div class="image-text-container">
+                <img src="productos/oshi.jpg" alt="Otra imagen">
+                <div class="text">
+                    <h2>Sushi Oshi</h2>
+                    <p>
+                        Es un shi que se coloca capas alternas de arroz de sushi
+                        y pescado en un molde, que luego se prensa para compactar los ingredientes</p>
+                   
+                    <button onclick="agregarAlCarrito('Sushi Oshi', 15.00)">+</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="image-right">
+            <img src="fondos/fondo3.jpg" alt="Imagen derecha">
+            <div class="image-right2">
+                <img src="fondos/fondo4.jpg " alt="Imagen derecha">
+                
+            </div>
+        </div>
+        
+    </div>
+   <footer>
+	<div class="left-column">
+		<div class="image-text">
+			<img src="redes sociales/gps_navigation.ico" alt="Imagen 1">
+			<p>Zona 10 Avenida 4 Calle 18</p>
+		</div>
+		<div class="image-text">
+			<img src="redes sociales/Phone_30029.ico" alt="Imagen 2">
+			<p>+502 6578-3245</p>
+		</div>
+		<div class="image-text">
+			<img src="redes sociales/Gmail.ico" alt="Imagen 3">
+			<p><a href=""></a>SushiWiickArt@gmail.com</p>
+		</div>
+	</div>
+	<div class="center-column">
+		<img src="imagenes/logo.jpg" height="175" width="200" alt="Logo">
+	</div>
+	<div class="right-column">
+		<h3>Sobre Suhi Wiick</h3>
+		<p>Somos un Restaurante de sushi que desea que tengas la mejor experencia al comer  sushi artesanal .</p>
+		<div class="social-media">
+			<a href="#"><img src="redes sociales/instagram.ico" alt="Facebook"></a>
+			<a href="#"><img src="redes sociales/pinterest.ico" alt="Twitter"></a>
+			<a href="#"><img src="redes sociales/facebook.ico" alt="Instagram"></a>
+			<a href="#"><img src="redes sociales/whatsapp.ico" alt="Instagram"></a>
+		</div>
+	</div>
+</footer>
+<div class="copyright">
+	<p>&copy;SushiWiickDominoFartTerror</p>
+</div>
+     <script src="js/productos.js"></script>
+</body>
+
+</html>

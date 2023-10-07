@@ -1,0 +1,263 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.timeline-section {
+  background: url(../fondos/fondo2.jpg) center no-repeat;
+  min-height: 100vh;
+  padding: 20px 15px;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+
+.timeline-items {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 25px;
+}
+
+.timeline-items::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #5be739;
+  left: calc(50% - 1px);
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+  height: 16px;
+  width: 16px;
+  background-color: #de9bf3;
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 10px;
+}
+
+.timeline-date {
+  font-size: 18px;
+  color: #000000;
+  margin: 6px 0 15px;
+}
+
+.timeline-content {
+  background-color: rgb(250, 183, 224);
+  padding: 30px;
+  border-radius: 5px;
+
+
+}
+
+.timeline-content h3 {
+  font-size: 20px;
+  color: #000000;
+  margin: 0 0 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.timeline-content p {
+  color: #0c0c0c;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+/* responsive */
+@media(max-width: 767px) {
+  .timeline-items::before {
+    left: 7px;
+  }
+
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+
+  .timeline-dot {
+    left: 0;
+  }
+}
+
+footer {
+  display: flex;
+  background-color: #ff8300;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+.left-column,
+.center-column,
+.right-column {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.center-column {
+  padding-left: 180px;
+}
+
+.right-column {
+  padding-right: 35px;
+}
+
+.image-text {
+  display: flex;
+  align-items: center;
+}
+
+.image-text img {
+  width: 50px;
+  /* Ajusta el tamaño de la imagen */
+  margin-right: 10px;
+}
+
+.image-text p {
+  margin: 0;
+  
+}
+.image-text a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media a {
+  margin: 0 10px;
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+  /* Ajusta el tamaño según sea necesario */
+}
+
+.copyright {
+  background-color: #ff8300;
+  color: rgb(26, 25, 25);
+  text-align: center;
+  padding: 10px 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.logo img {
+  width: 150px;
+  height: 85px;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  /* Alinea los elementos en una línea */
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #eb94f3;
+}
+
+.dropdown {
+  position: relative;
+  /* Añade posición relativa para los elementos con desplegable */
+}
+
+.dropdown-content {
+  display: none;
+  /* Oculta el contenido del desplegable por defecto */
+  position: absolute;
+  background-color: #111111;
+  min-width: 100px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  /* Muestra el contenido del desplegable cuando se hace hover en el elemento padre */
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1a5de;
+}
+.title{
+  padding-left: 550px;
+  font-family:Arial, Helvetica, sans-serif  ;
+  font-size: 28px ;
+}
+.espacio{
+  padding-top: 30px;
+}

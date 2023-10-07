@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/orden.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li class="dropdown">
+                    <a href="#">Carta</a>
+                    <ul class="dropdown-content">
+                        <li><a href="prueba.html">Comida</a></li>
+                        <li><a href="bebida.html">Bebida</a></li>
+                    </ul>
+                </li>
+                <li><a href="orden.html">Orden</a></li>
+      
+            </ul>
+        </nav>
+    </header>
+
+<div class="mover2">
+    <div class="mover">
+      <h1>Carrito de Compras</h1>
+
+      <div id="carrito" class="producto">
+          <!-- Aquí se mostrarán los productos -->
+      </div>
+  
+      <div id="total">
+          <p>Total:<span id="totalPrecio">$0.00</span></p>
+      </div>
+      <label for="direccion">Escribe tu dirección:</label>
+      <input type="text" id="direccion" placeholder="Ingresa tu dirección">
+  
+      <button onclick="confirmarPedido()">Confirmar su pedido</button>  
+  </div>
+  
+  <div class="abajo"></div>
+</div>
+
+<footer>
+	<div class="left-column">
+		<div class="image-text">
+			<img src="redes sociales/gps_navigation.ico" alt="Imagen 1">
+			<p>Zona 10 Avenida 4 Calle 18</p>
+		</div>
+		<div class="image-text">
+			<img src="redes sociales/Phone_30029.ico" alt="Imagen 2">
+			<p>+502 6578-3245</p>
+		</div>
+		<div class="image-text">
+			<img src="redes sociales/Gmail.ico" alt="Imagen 3">
+			<p><a href=""></a>SushiWiickArt@gmail.com</p>
+		</div>
+	</div>
+	<div class="center-column">
+		<img src="imagenes/logo.jpg" height="175" width="200" alt="Logo">
+	</div>
+	<div class="right-column">
+		<h3>Sobre Suhi Wiick</h3>
+		<p>Somos un Restaurante de sushi que desea que tengas la mejor experencia al comer  sushi artesanal .</p>
+		<div class="social-media">
+			<a href="#"><img src="redes sociales/instagram.ico" alt="Facebook"></a>
+			<a href="#"><img src="redes sociales/pinterest.ico" alt="Twitter"></a>
+			<a href="#"><img src="redes sociales/facebook.ico" alt="Instagram"></a>
+			<a href="#"><img src="redes sociales/whatsapp.ico" alt="Instagram"></a>
+		</div>
+	</div>
+</footer>
+<div class="copyright">
+	<p>&copy;SushiWiickDominoFartTerror</p>
+</div>  
+      <script src="js/carrito.js"></script>
+   
+</body>
+</html>

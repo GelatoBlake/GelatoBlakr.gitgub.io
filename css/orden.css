@@ -1,0 +1,240 @@
+footer {
+    display: flex;
+    background-color: #ff8300;
+    color: rgb(5, 5, 5);
+    padding: 20px;
+  }
+  
+  .left-column, .center-column, .right-column {
+    flex: 1;
+    padding: 0 10px;
+  }
+  .center-column{
+    padding-left: 180px;
+  }
+  .right-column
+{
+    padding-right: 35px;
+}
+  .image-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-text img {
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    margin-right: 10px;
+  }
+  
+  .image-text p {
+    margin: 0;
+  }
+  
+  .social-media {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+  }
+  
+  .copyright {
+    background-color: #ff8300;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: 85px; 
+  }
+  
+  nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex; /* Alinea los elementos en una línea */
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #eb98b4;
+  } 
+  .dropdown {
+    position: relative; /* Añade posición relativa para los elementos con desplegable */
+  }
+  
+  .dropdown-content {
+    display: none; /* Oculta el contenido del desplegable por defecto */
+    position: absolute;
+    background-color: #000000;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block; /* Muestra el contenido del desplegable cuando se hace hover en el elemento padre */
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #fc8ee4;
+  }     
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+
+  background-color: #f0f0f0;
+}
+
+.abajo{
+    padding: 25px;
+}
+
+.container {
+    border: 2px solid #000;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  .content {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ 
+.mover {
+  border: 2px solid #ccc; /* Borde del cuadrado */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 50px; /* Espaciado interno */
+  max-width: 400px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
+  background-color: white; /* Fondo blanco */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+
+}
+
+span{
+  padding-left: 250px;
+}
+#total{
+  background-color: aquamarine;
+  border-radius: 18px;
+}
+h1{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+  border-radius: 18px;
+}
+.mover2{
+  padding-top: 25px;
+}
+button {
+  border: none; /* Quita el borde */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db; /* Color de fondo */
+  color: #fff; /* Color del texto */    
+  cursor: pointer;
+  margin-top: 10px; /* Espacio superior */
+  width: 100% ;
+}
+
+button:hover {
+  background-color: #29b954; /* Cambio de color al pasar el ratón */
+}
+.carrito-columns {
+  display: flex;
+  flex-direction: row;
+}
+
+.carrito-column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+#carrito {
+  display: flex;
+  flex-direction: column;
+}
+
+#carrito div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; /* Espacio entre cada producto */
+}
+/* Estilos para el campo de dirección */
+label {
+  display: block; /* Hace que el label sea un bloque para el espacio entre elementos */
+  margin-top: 10px; /* Espacio entre el botón y el campo de dirección */
+}
+
+input[type="text"] {
+  width: 94%; /* Ocupa todo el ancho disponible */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+
+

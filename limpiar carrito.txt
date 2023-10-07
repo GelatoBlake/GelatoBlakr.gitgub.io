@@ -1,0 +1,44 @@
+let isLeavingPage = true;  // Bandera para controlar si el usuario está abandonando la página
+
+document.addEventListener('DOMContentLoaded', () => {
+    mostrarCarrito();
+    window.addEventListener('beforeunload', handleBeforeUnload);
+});
+
+function mostrarCarrito() {
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const carritoDiv = document.getElementById('carrito');
+    const totalPrecioSpan = document.getElementById('totalPrecio');
+
+    let totalPrecio = 0;
+
+    carrito.forEach(item => {
+        const { nombre, precio, cantidad } = item;
+
+        const productoDiv = document.createElement('div');
+        productoDiv.textContent = `${nombre} - Cantidad: ${cantidad} - Precio: $${(precio * cantidad).toFixed(2)}`;
+        carritoDiv.appendChild(productoDiv);
+
+
+        totalPrecio += item.precio * item.cantidad;
+    });
+
+  // Actualizar el total de precio en la interfaz
+  totalPrecioSpan.textContent = `$${totalPrecio.toFixed(2)}`;
+
+}
+
+function handleBeforeUnload(event) {
+    if (isLeavingPage) {
+        const confirmationMessage = '¿Estás seguro de que quieres abandonar la página? Tu carrito se vaciará.';
+        event.returnValue = confirmationMessage;
+
+        // Vaciar el carrito solo si el usuario está abandonando la página
+        localStorage.removeItem('carrito');
+    }
+}
+
+function navigateWithinPage() {
+    // Esta función se puede llamar cuando el usuario navega dentro de la página
+    isLeavingPage = false;  // El usuario no está abandonando la página
+}
